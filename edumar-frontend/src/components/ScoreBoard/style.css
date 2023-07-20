@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #ffba08;
+  --secondary-color: #032b43;
+  --tertiary-color: #d00000;
+}
+
+.board {
+  text-align: center;
+}
+
+.board .scoreboard {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 40px;
+  color: var(--secondary-color);
+}
+
+.board .courses {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.board .courses > button {
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5em 2em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.board .courses > button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.board .scores {
+  margin-bottom: 16em;
+  width: 70%;
+}
