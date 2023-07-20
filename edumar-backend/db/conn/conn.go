@@ -13,7 +13,7 @@ import (
 )
 
 func DBConnection() (*sql.DB, error) {
-	errEnv := godotenv.Load(".env")
+	errEnv := godotenv.Load("../.env")
 	if errEnv != nil {
 		log.Fatalf("Error loading .env file")
 	}
